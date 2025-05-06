@@ -34,13 +34,16 @@
 
 *******************************************/
 
+#ifndef SNTOOLS_OUTPUT_H
+#define SNTOOLS_OUTPUT_H
+
 
 // define flags for software packages
 
 
 #define USE_HBOOKxxx                            
 
-#define USE_ROOT   
+#define USE_ROOTxxxx  // HMK should set this in configure   
 #define USE_TEXT  // always leave this on; same logic as for HBOOK,ROOT, ...
 #define USE_MARZ  // always leave this on
 
@@ -359,7 +362,8 @@ struct LASTREAD_AUTOSTORE  {
 } LASTREAD_AUTOSTORE ;
 
 // generic strings for errmsg 
-char MSGERR1[200], MSGERR2[200] ;
+//extern static char MSGERR1[200], MSGERR2[200] ;
+extern char MSGERR1[200], MSGERR2[200] ;
 char SNANA_VERSION[100] ;
 
 #define KEYNAME_VERSION_PHOTOMETRY "VERSION_PHOTOMETRY:"
@@ -613,5 +617,6 @@ extern"C" {
 }          
 #endif
 
+#endif  // HMK header guard
 
 // END

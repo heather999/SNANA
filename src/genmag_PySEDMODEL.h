@@ -5,6 +5,9 @@
 
 // define pre-processor command to use python interface
 
+#ifndef GENMAG_PySEDMODEL_H
+#define GENMAG_PySEDMODEL_H
+
 
 #define USE_PYTHON                          
 
@@ -83,5 +86,7 @@ void genSpec_PySEDMODEL(double Tobs, double z, double MU, double MWEBV,
 			double *GENMAG_LIST );        // (O) magGen per bin
 
 void read_SALT2_template0(void); // for debug only (no python)
+
+#endif
 
 // ==== END ====

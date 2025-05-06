@@ -48,6 +48,9 @@
 
 ********************************************************/
 
+#ifndef SNTOOLS_H
+#define SNTOOLS_H
+
 
 #include <stdio.h>
 #include <string.h>
@@ -1000,5 +1003,7 @@ float malloc_shortint2D(int opt, int LEN1, int LEN2,
 			short int ***array2D );
 float malloc_shortint4D(int opt, int LEN1, int LEN2, int LEN3, int LEN4,
 			short int *****array4D );
+
+#endif // HMK header guard
 
 // ============== END OF FILE =============

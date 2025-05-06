@@ -22,6 +22,9 @@
 
 *****************************************************/
 
+#ifndef SNDATA_H
+#define SNDATA_H
+
 #define MXEPOCH  30000   // max Nepoch for data & simlib
 
 #define MXEPCOV  112     // max epochs to store in covariance matrix
@@ -87,7 +90,7 @@
 #define MODEL_NAME_PYBAYESN "PYBAYESN" // don't confuse with C code BAYESN
 #define MODEL_NAME_AGN      "AGN"
 #define NCHOICE_PySEDMODEL  4
-char    PySEDMODEL_CHOICE_LIST[NCHOICE_PySEDMODEL][20] ;
+extern char    PySEDMODEL_CHOICE_LIST[NCHOICE_PySEDMODEL][20] ;
 
 
 // Mar 2024:  define mask bits for new MASK_REDSHIFT_SOURCE variables to make
@@ -510,5 +513,7 @@ struct SNDATA {
 
 } SNDATA ;
 
+
+#endif //HMK header guard
 
 // end of file.

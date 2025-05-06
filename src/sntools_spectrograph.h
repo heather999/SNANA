@@ -2,6 +2,10 @@
 // Created July 2016 by R.Kessler
 // Dec 30 2024: ZPMIN_SPECTROGRAPH -> -10 (was 0)
 
+
+#ifndef SNTOOLS_SPECTROGRAPH_H
+#define SNTOOLS_SPECTROGRAPH_H
+
 #define MXSPEC                 MXSPECTRA  // max Nspec per event   
 #define MXTEXPOSE_SPECTROGRAPH 50   // max size of TEXPOSE grid
 #define MXLAM_SPECTROGRAPH     10000 // ->10k on May 27 2020 (was 2400)
@@ -15,6 +19,7 @@
 #define ISPEC_PEAK        3*MXSPECTRA // imjd=ISPEC_PEAK -> fetch peak spec
 #define ZPMIN_SPECTROGRAPH -10.0 
 #define ZPMAX_SPECTROGRAPH  30.0
+
 
 /* xxx mark delete Oct 29 2024 xxxxx
 #define WRITE_MASK_SPEC_DEFAULT  2  // lammin lammax Flam FlamERR SIM_FLAM
@@ -176,6 +181,8 @@ void check_SNR_SPECTROGRAPH(int l, int t);
 int  IMJD_GENSPEC(double MJD); // return IMJD index such that MJD_LIST[IMJD] = MJD
 
 void create_ideal_spectrograph(double lammin, double lammax, double lambin );
+
+#endif
 
 // === END === 
 

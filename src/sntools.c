@@ -21,6 +21,9 @@
 #include "eispack.h"
 #include "eispack.c"
 
+char MSGERR1[200], MSGERR2[200] ;
+char PySEDMODEL_CHOICE_LIST[NCHOICE_PySEDMODEL][20];
+
 /*********************************************************
 **********************************************************
 
